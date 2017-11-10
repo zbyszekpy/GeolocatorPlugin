@@ -42,5 +42,10 @@ namespace Plugin.Geolocator.Abstractions
 		/// </summary>
 		/// <value>The time between updates (default:  5 minutes).</value>
 		public TimeSpan? DeferralTime { get; set; } = TimeSpan.FromMinutes(5);
+
+		/// <summary>
+		/// A indicating whether the status bar changes its appearance when location services are used in the background.
+		/// </value>
+		public bool ShowsBackgroundIndicator { get; set; } 
 	}
 }
